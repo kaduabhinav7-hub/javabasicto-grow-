@@ -4,21 +4,15 @@ public class Pattern {
         int n = 4; // rows
         int m = 5; // columns
 
-        // outer loop
+        // outer loop (rows)
         for (int i = 1; i <= n; i++) {
 
-            // inner loop
+            // inner loop (columns)
             for (int j = 1; j <= m; j++) {
-
-                // print * on borders
-                if (i == 1 || j == 1 || i == n || j == m) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
+                System.out.print("*");
             }
 
-            // move to next line
+            // next line after each row
             System.out.println();
         }
     }
